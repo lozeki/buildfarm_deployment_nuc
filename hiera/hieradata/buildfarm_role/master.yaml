@@ -3,7 +3,7 @@ user::admin::password_hash: '#jbcrypt:$2a$10$.5YoY/4Z6ZNqgu0wznnrpuv0qWdSpvJ966J
 
 credentials::jenkins-slave::username: jenkins-agent
 credentials::jenkins-slave::id: 45d97374-1624-4b64-bd61-b095c9877bf1
-credentials::jenkins-slave::passphrase:
+credentials::jenkins-slave::passphrase: ''
 
 # Uncomment below to increase the memory available for Jenkins
 # This is highly recommended for larger deployments
