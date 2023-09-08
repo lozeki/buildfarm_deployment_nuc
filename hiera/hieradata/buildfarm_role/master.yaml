@@ -1,5 +1,5 @@
 user::admin::name: admin
-user::admin::password_hash: '#jbcrypt:$2a$10$vmmqzRmcDHj1t9Ajgq5edekPD8cbpD./pBSGcYzia.OsIroOKjghm'
+user::admin::password_hash: '#jbcrypt:$2a$10$5t54V3kd972K8kPuPIn6aOmLhmMdDaYRgDQemwTaSCpLOGhi0G4CW'
 
 credentials::jenkins-slave::username: jenkins-agent
 credentials::jenkins-slave::id: 1e7d4696-7fd4-4bc6-8c87-ebc7b6ce16e5
@@ -29,34 +29,34 @@ jenkins::slave::labels: agent_on_master
 jenkins::slave::slave_mode: exclusive
 jenkins::slave::slave_name: agent_on_master
 
-jenkins::private_ssh_key: |
-    -----BEGIN RSA PRIVATE KEY-----
-    MIIEpQIBAAKCAQEAtjTmkbHWaqk6wsDUe+wECKsAD2JA34i9Truz4v6mlvUu1FNG
-    NSgEOpFoYCXPUbToW2Shh2xU6ki0+Nt+U5Jj75WW1dmyvGVYgZqkN6/LwzIQv/qf
-    RHPUj/LI7+iXCBFjsuc1z5wdzpxx1l5r2T+O64yWNJe+he9X2bd75b8o8+yK4pFC
-    5rinMqxPs7pZm0k7XxmYcUET8WQzv0Yjnpgj7GKObv61DI1h/gpBCNLMEJTOkCL4
-    1nX2LTcEE/cqOdzFxcuY6HYVuGDjp3ChOETDiPS5ruoxNBpnZkhL+POkeKLeolmp
-    8doZP+Os5Zl9ZEihljm0XR+ex/8SAMb8Pj4k3QIDAQABAoIBAQCKBgbHRS0EvU86
-    6nHLsdzYaBjyjl5QNrgY5U1+XaL6ZZ7kznQ3nimd6Dpl4x5qaZ0+ZjuKZ4DnvM4C
-    WdsXGaTEf8+0DWY9GpRyER/m4y96nPldRE/Tvd6+cI7QVaPbQ7j/c/AqZbuaoJ4H
-    Yp1WA7STMHs0OeLkeItW7IxZXHZ8V2LhZeCCGy3UYlHYeSQ5K0NE/Ry3MH1iySIs
-    V0XvGgrNaT+Os1DXBtKCUQC8PaT1z9qq53qAceOhj8h1lrr/NubCgAyJHfL57ry1
-    KkeEyp+yTePqyIX/tBwN8BKLdVvCFp3VnxRWE3E0qvXKtVm8MRHR3C9mSxQrKMsz
-    PdjEhvkBAoGBAODDHrpv/Q2xglvHcegCZNte9WDNsadJJcurWf7KuBg79gbXK8Sw
-    PKMSMIwwQlcY3x4ciav3rde5INZBgpdN1BqGtE5EHt/rqhkBrOraJP4KlgqQnVdn
-    SBAFvkrr7RRiV2U4icD1ZRL0mHNawSlcPTZ9oP++U+AaCAnJVTE2PDEdAoGBAM+H
-    rzTMQG3bKAND1P5xfjm0zSjnqEwGVXOgTcHRmeqOOu2pzkT2n6TzrkBbWXc78rhv
-    a9UTz2+QjIszhb9goBkfGF5+enMwksOikUWjfCZPNFeLmPQD34Hko/hmh4n1b1lm
-    XOG8M6R3q7kmS6dRdyfG4TDR6oMQDzRWHFJ7tTbBAoGASkw1vCuI2x3ymaQ0Yx1n
-    eZzKQFW+hC4J8GmUNkWM1XX8vgYi0cHwSXeZ1L2fMGtoVevZFp+pN8ZatHizUpDH
-    rH0a3URncF3WvK1xG7FAyTl2n8duO5ZInANKBDo5BKP9f9hQsRhtcPap7nfxolp7
-    YaflsKSZ1VrFjXagUsQ64YECgYEAhDzRR7Ne2qFrPalbb0aiR+MNV6NFeiwPBz5+
-    TaJhkTRQGGC7LvZ3g4RC5H9Q4skwQJW/AGc/JrfU1l5eOzQ2z8sgnBW7sOqimkZc
-    iyNBWKffkmlBbTuKkBpA4WdztlTOPwka5jwmLAaVRcVBL7yZUJ9JnvIjnJ//EDpO
-    kcCCGAECgYEA1wiLyDJ/5OuKFRyE5Y1MJJJBg3M49YWxZl3RtVzaTHl3WBUbL52I
-    SRbOij6xH8URigzwKGV+KubshUC5P3TQxc6AkUpIRM6iWBpz1yzb8o5PdrTQ4VVp
-    QhbS+sZ+JcyNMAHEOkHkEN/eS930FnCyeLQwYEwJAkiYl7vkVuXXzAA=
-    -----END RSA PRIVATE KEY-----
+jenkins::private_ssh_key: |-
+  -----BEGIN RSA PRIVATE KEY-----
+  MIIEowIBAAKCAQEA3MZXs+2f7+VHV3R5iniDOXwmW/LuzoM/HCQ0nMrE87gqcEEh
+  Ny1Z+SKaNvJ8QMbRKAUSMuKd56EVRA6vRBum3ZNnXTcR/Be/TcjAQlYjrvDZON/6
+  8i5/1iyO8YBjWSqLyfyDJv3777NWmbW+DDHyxPP8WIqDbWD4nvQCi6AlRuPiyIDQ
+  bYdQSlIG7IFxC+O7H0HBcuCoFO6jRCprE0OQ8K+5fKt4GgHWfFaB1CV5TS/p7Xt0
+  pQHdnSdLc3v5G7d+8LiZuERgJhqJvgZQGWYIwz5LI8gE6uMPDV4iUThbWqrQrJHY
+  w86R9wacsBR+MbPeaEwsQKXgGM1uTrGgwC0mzwIDAQABAoIBAE0zWlXDwUq9DS5q
+  v1mJfLGsVSmQEKvMP1RS4Mb3LNngy45HaBsIU88Hp4+RSZvJKjhpVYzPq9HkhTAw
+  Rl91n+sZcWqqKDLUBwRnL7vCrWWuOPdnczQeyHsXR8DxWUxD0XAHScFnzSJrvtuv
+  Ls7K5I60lshLX1vvLeE/iGhUztQzk8QlVkgOXEa8rZRhch+YUqwuNduP8rHMhMZJ
+  kRVo8+quUMP900WXFAoWmM3ROUXYxn5UAOyGbv/dx/gZwkTh+7bqF4KKkiLITonO
+  RRRgbaD5nA9wn/O2SbKJ++hAowhOudZWU/GUOsAyVcUuAyIW8WpTuk1+8QVp1bho
+  Xtj8u+kCgYEA7zIIeen49J2k/w3S/EqpNFvfNcjboWP88Ygh6RTPLpNTgldn512t
+  M7uYd2x/yXmrJA3Z333+Uqz219ZR5fHe7qj6swX4pLOvdwkLwrmWgBE7nsHm53W8
+  2hlP2VZqeGUGr22J1oABVn/Uu7I5cwQc5X9rCyIVtyue9eNlEt3Q86UCgYEA7EkC
+  zkVlFvN0Sn3UsBrB1a3N6xkukTjyEVMi2CHA95wl/NSxo5N5q8ExeBuvkmmyl2+E
+  GadlLixKUyzmwXypvYXdTv2brHaJCmUIJfh5wPU435mDYIAsDkVfCI4sf+XhxLfd
+  CCcit+RMbp6pNRynbq4KnyUvRSxgRKD8EO931mMCgYBnqiR4ScnGoifnDiO5idYJ
+  RiPX2IQvTvlJ6Hjh3k3oXptbquvyHuw4tn3ejBxZwixExOf+70jwpduZMV5vLMM0
+  ZfG48saPAvzxtu7s5qfuOwm+xUSAXcuKLlwn0kb0hLw//VY2q2VpCp+09Qnm6gpo
+  AC/xNEV7DCGpaXLdmVq8rQKBgQC/3fWSS9Vvkpdu2ci4i7G0cqLQci1XLVeba9fS
+  i24nYruSF6B7xIg7SPCDqG+kQ4IK6DnrnvtRSBO+gKqMmU84H5h6yQL9Q2+6ahn4
+  w1ESt83L+9srpEih+gDWcKR/4sq2s9qfATB3BMJv3RRnlXH8NQVY/5fn4sX1VIf6
+  tImqIwKBgCdy1j2Ep+O/1UKniW4S+mikc8YluWrQABdLjiJ7jt6gbFypxCN29rV2
+  WMPI4F2nisWo/S3rGHxMDWT9+2rFY+3JpgZ/SIjZGMo1uqY7PX85ISc6nEdSxttk
+  TvX9qJRVw0cNfFAjG9yVru9CO+Kv1c0c0YiDczHlxspKpX7kQCn4
+  -----END RSA PRIVATE KEY-----
 
 # Optional customization urls for uploading docs.
 # These should match the credentials in the ros_buildfarm_config doc-build.yaml.
@@ -76,3 +76,34 @@ jenkins::github::token: somegithubtoken
 # default value of https://api.github.com can be overridden for GitHub Enterprise.
 # jenkins::github::api_url: 'https://api.github.com'
 
+credentials::git-fetch-ssh::username: 'lozeki'
+credentials::git-fetch-ssh::id: bBUlNBeckRx7Y1oNYTLEgOeTN8pJIIscBlXHNo5j9Ig
+credentials::git-fetch-ssh::passphrase: ''
+credentials::git-fetch-ssh::private_key: |-
+  -----BEGIN RSA PRIVATE KEY-----
+  MIIEowIBAAKCAQEA3MZXs+2f7+VHV3R5iniDOXwmW/LuzoM/HCQ0nMrE87gqcEEh
+  Ny1Z+SKaNvJ8QMbRKAUSMuKd56EVRA6vRBum3ZNnXTcR/Be/TcjAQlYjrvDZON/6
+  8i5/1iyO8YBjWSqLyfyDJv3777NWmbW+DDHyxPP8WIqDbWD4nvQCi6AlRuPiyIDQ
+  bYdQSlIG7IFxC+O7H0HBcuCoFO6jRCprE0OQ8K+5fKt4GgHWfFaB1CV5TS/p7Xt0
+  pQHdnSdLc3v5G7d+8LiZuERgJhqJvgZQGWYIwz5LI8gE6uMPDV4iUThbWqrQrJHY
+  w86R9wacsBR+MbPeaEwsQKXgGM1uTrGgwC0mzwIDAQABAoIBAE0zWlXDwUq9DS5q
+  v1mJfLGsVSmQEKvMP1RS4Mb3LNngy45HaBsIU88Hp4+RSZvJKjhpVYzPq9HkhTAw
+  Rl91n+sZcWqqKDLUBwRnL7vCrWWuOPdnczQeyHsXR8DxWUxD0XAHScFnzSJrvtuv
+  Ls7K5I60lshLX1vvLeE/iGhUztQzk8QlVkgOXEa8rZRhch+YUqwuNduP8rHMhMZJ
+  kRVo8+quUMP900WXFAoWmM3ROUXYxn5UAOyGbv/dx/gZwkTh+7bqF4KKkiLITonO
+  RRRgbaD5nA9wn/O2SbKJ++hAowhOudZWU/GUOsAyVcUuAyIW8WpTuk1+8QVp1bho
+  Xtj8u+kCgYEA7zIIeen49J2k/w3S/EqpNFvfNcjboWP88Ygh6RTPLpNTgldn512t
+  M7uYd2x/yXmrJA3Z333+Uqz219ZR5fHe7qj6swX4pLOvdwkLwrmWgBE7nsHm53W8
+  2hlP2VZqeGUGr22J1oABVn/Uu7I5cwQc5X9rCyIVtyue9eNlEt3Q86UCgYEA7EkC
+  zkVlFvN0Sn3UsBrB1a3N6xkukTjyEVMi2CHA95wl/NSxo5N5q8ExeBuvkmmyl2+E
+  GadlLixKUyzmwXypvYXdTv2brHaJCmUIJfh5wPU435mDYIAsDkVfCI4sf+XhxLfd
+  CCcit+RMbp6pNRynbq4KnyUvRSxgRKD8EO931mMCgYBnqiR4ScnGoifnDiO5idYJ
+  RiPX2IQvTvlJ6Hjh3k3oXptbquvyHuw4tn3ejBxZwixExOf+70jwpduZMV5vLMM0
+  ZfG48saPAvzxtu7s5qfuOwm+xUSAXcuKLlwn0kb0hLw//VY2q2VpCp+09Qnm6gpo
+  AC/xNEV7DCGpaXLdmVq8rQKBgQC/3fWSS9Vvkpdu2ci4i7G0cqLQci1XLVeba9fS
+  i24nYruSF6B7xIg7SPCDqG+kQ4IK6DnrnvtRSBO+gKqMmU84H5h6yQL9Q2+6ahn4
+  w1ESt83L+9srpEih+gDWcKR/4sq2s9qfATB3BMJv3RRnlXH8NQVY/5fn4sX1VIf6
+  tImqIwKBgCdy1j2Ep+O/1UKniW4S+mikc8YluWrQABdLjiJ7jt6gbFypxCN29rV2
+  WMPI4F2nisWo/S3rGHxMDWT9+2rFY+3JpgZ/SIjZGMo1uqY7PX85ISc6nEdSxttk
+  TvX9qJRVw0cNfFAjG9yVru9CO+Kv1c0c0YiDczHlxspKpX7kQCn4
+  -----END RSA PRIVATE KEY-----
