@@ -9,7 +9,7 @@ mod 'puppetlabs-vcsrepo', '1.5.0'
 mod 'voxpupuli-jenkins', 
   :git => 'https://github.com/nuclearsandwich/puppet-jenkins',
   :ref => '1.7.0-rosbuildfarm3'
-mod 'puppet-python', '5.0.0'
+mod 'puppet-python', '4.1.1'
 mod 'newrelic-nrsysmond',
   :git => "https://github.com/newrelic/puppet-nrsysmond.git"
 
