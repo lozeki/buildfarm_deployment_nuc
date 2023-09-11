@@ -9,8 +9,9 @@ mod 'puppetlabs-vcsrepo', '1.5.0'
 mod 'voxpupuli-jenkins', 
   :git => 'https://github.com/mikekaram/puppet-jenkins.git',
   :ref => '1.7.0-rosbuildfarm3-update-java'
-mod 'puppet-python', '5.0.0'
+mod 'stankevich/python', '1.18.2'
 mod 'newrelic-nrsysmond',
-  :git => "https://github.com/newrelic/puppet-nrsysmond.git"
+  :git => "https://github.com/newrelic/puppet-nrsysmond.git",
+  :ref => 'master'
 
 mod 'saz-timezone', '3.4.0'
