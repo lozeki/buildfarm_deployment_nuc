@@ -1,3 +1,4 @@
+require 'hiera'
 <% hiera(["ssh_host_keys", []]).each do | hostname, host_key| %>
 <%= host_key %>
 <% end %>
