@@ -56,9 +56,7 @@ class profile::jenkins::agent (
     require => User[$agent_username],
   }
   
-  include python
-  
-  class { 'python' :
+  require { 'python' :
     version => 'python3',
     pip     => 'present',
   }
