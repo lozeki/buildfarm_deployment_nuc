@@ -36,7 +36,7 @@ class profile::jenkins::agent (
     mode => '0644',
     owner => $agent_username,
     group => $agent_username,
-    content => template('agent_files/known_hosts.erb'),
+    content => template('agent_files/templates/known_hosts.erb'),
     require => File["/home/${agent_username}/.ssh/"],
   }
 
@@ -55,7 +55,9 @@ class profile::jenkins::agent (
     group  => $agent_username,
     require => User[$agent_username],
   }
-
+  
+  include python
+  
   class { 'python' :
     version => 'python3',
     pip     => 'present',
