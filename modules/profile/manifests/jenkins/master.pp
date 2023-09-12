@@ -44,7 +44,7 @@ class profile::jenkins::master {
     mode => '0640',
     owner => jenkins,
     group => jenkins,
-    source => 'puppet:///modules/jenkins_files/var/lib/jenkins/audit-trail.xml',
+    source => 'puppet:///modules/jenkins_files/files/var/lib/jenkins/audit-trail.xml',
     require => Jenkins::Plugin['audit-trail'],
     notify => Service['jenkins'],
   }
@@ -54,7 +54,7 @@ class profile::jenkins::master {
     mode => '0640',
     owner => jenkins,
     group => jenkins,
-    source => 'puppet:///modules/jenkins_files/var/lib/jenkins/org.jvnet.hudson.plugins.collapsingconsolesections.CollapsingSectionNote.xml',
+    source => 'puppet:///modules/jenkins_files/files/var/lib/jenkins/org.jvnet.hudson.plugins.collapsingconsolesections.CollapsingSectionNote.xml',
     require => Jenkins::Plugin['collapsing-console-sections'],
     notify => Service['jenkins'],
   }
@@ -85,7 +85,7 @@ class profile::jenkins::master {
     mode => '0640',
     owner => jenkins,
     group => jenkins,
-    source => 'puppet:///modules/jenkins_files/var/lib/jenkins/jobConfigHistory.xml',
+    source => 'puppet:///modules/jenkins_files/files/var/lib/jenkins/jobConfigHistory.xml',
     require => Jenkins::Plugin['jobConfigHistory'],
     notify => Service['jenkins'],
   }
@@ -94,7 +94,7 @@ class profile::jenkins::master {
     mode => '0640',
     owner => jenkins,
     group => jenkins,
-    source => 'puppet:///modules/jenkins_files/var/lib/jenkins/jenkins.advancedqueue.PrioritySorterConfiguration.xml',
+    source => 'puppet:///modules/jenkins_files/files/var/lib/jenkins/jenkins.advancedqueue.PrioritySorterConfiguration.xml',
     require => Jenkins::Plugin['PrioritySorter'],
     notify => Service['jenkins'],
   }
@@ -114,7 +114,7 @@ class profile::jenkins::master {
     mode => '0640',
     owner => jenkins,
     group => jenkins,
-    source => 'puppet:///modules/jenkins_files/var/lib/jenkins/hudson.scm.SubversionSCM.xml',
+    source => 'puppet:///modules/jenkins_files/files/var/lib/jenkins/hudson.scm.SubversionSCM.xml',
     require => Jenkins::Plugin['subversion'],
     notify => Service['jenkins'],
   }
@@ -124,7 +124,7 @@ class profile::jenkins::master {
     mode => '0640',
     owner => jenkins,
     group => jenkins,
-    source => 'puppet:///modules/jenkins_files/var/lib/jenkins/hudson.plugins.warnings.WarningsPublisher.xml',
+    source => 'puppet:///modules/jenkins_files/files/var/lib/jenkins/hudson.plugins.warnings.WarningsPublisher.xml',
     require => Jenkins::Plugin['warnings'],
     notify => Service['jenkins'],
   }
@@ -138,7 +138,7 @@ class profile::jenkins::master {
     owner => jenkins,
     group => jenkins,
     replace => false,
-    source => 'puppet:///modules/jenkins_files/var/lib/jenkins/config.xml',
+    source => 'puppet:///modules/jenkins_files/files/var/lib/jenkins/config.xml',
     require => Package['jenkins'],
     notify => Service['jenkins'],
   }
@@ -151,7 +151,7 @@ class profile::jenkins::master {
     mode => '0640',
     owner => jenkins,
     group => jenkins,
-    source => 'puppet:///modules/jenkins_files/var/lib/jenkins/hudson.plugins.mercurial.MercurialInstallation.xml',
+    source => 'puppet:///modules/jenkins_files/files/var/lib/jenkins/hudson.plugins.mercurial.MercurialInstallation.xml',
     require => Package['jenkins'],
     notify => Service['jenkins'],
   }
@@ -171,7 +171,7 @@ class profile::jenkins::master {
     mode    => '0640',
     owner   => jenkins,
     group   => jenkins,
-    source  => 'puppet:///modules/jenkins_files/var/lib/jenkins/scriptApproval.xml',
+    source  => 'puppet:///modules/jenkins_files/files/var/lib/jenkins/scriptApproval.xml',
     require => Package['jenkins'],
     notify  => Service['jenkins'],
   }
@@ -196,7 +196,7 @@ class profile::jenkins::master {
     mode => '0640',
     owner => jenkins,
     group => jenkins,
-    source => 'puppet:///modules/jenkins_files/var/lib/jenkins/secrets/slave-to-master-security-kill-switch',
+    source => 'puppet:///modules/jenkins_files/files/var/lib/jenkins/secrets/slave-to-master-security-kill-switch',
     require => [Package['jenkins'],
     File[$user_dirs],],
     notify => Service['jenkins'],
@@ -208,7 +208,7 @@ class profile::jenkins::master {
     mode => '0640',
     owner => jenkins,
     group => jenkins,
-    source => 'puppet:///modules/jenkins_files/var/lib/jenkins/secrets/filepath-filters.d/60-ssh-id.conf',
+    source => 'puppet:///modules/jenkins_files/files/var/lib/jenkins/secrets/filepath-filters.d/60-ssh-id.conf',
     require => [Package['jenkins'],
     File[$user_dirs],],
     notify => Service['jenkins'],
