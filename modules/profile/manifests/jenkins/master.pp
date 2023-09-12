@@ -65,7 +65,7 @@ class profile::jenkins::master {
     mode => '0600',
     owner => 'jenkins',
     group => 'jenkins',
-    content => template('jenkins_files/com.cloudbees.jenkins.GitHubPushTrigger.xml.erb'),
+    content => template('jenkins_files/templates/com.cloudbees.jenkins.GitHubPushTrigger.xml.erb'),
     require => Package['jenkins'],
     notify => Service['jenkins'],
   }
@@ -75,7 +75,7 @@ class profile::jenkins::master {
     mode => '0600',
     owner => 'jenkins',
     group => 'jenkins',
-    content => template('jenkins_files/org.jenkinsci.plugins.ghprb.GhprbTrigger.xml.erb'),
+    content => template('jenkins_files/templates/org.jenkinsci.plugins.ghprb.GhprbTrigger.xml.erb'),
     require => Package['jenkins'],
     notify => Service['jenkins'],
   }
@@ -104,7 +104,7 @@ class profile::jenkins::master {
     mode => '0640',
     owner => jenkins,
     group => jenkins,
-    content => template('jenkins_files/jenkins.plugins.publish_over_ssh.BapSshPublisherPlugin.xml.erb'),
+    content => template('jenkins_files/templates/jenkins.plugins.publish_over_ssh.BapSshPublisherPlugin.xml.erb'),
     require => Jenkins::Plugin['publish-over-ssh'],
     notify => Service['jenkins'],
   }
@@ -161,7 +161,7 @@ class profile::jenkins::master {
     mode => '0640',
     owner => jenkins,
     group => jenkins,
-    content => template('jenkins_files/nodeMonitors.xml.erb'),
+    content => template('jenkins_files/templates/nodeMonitors.xml.erb'),
     require => Package['jenkins'],
     notify => Service['jenkins'],
   }
@@ -220,7 +220,7 @@ class profile::jenkins::master {
     mode => '0640',
     owner => jenkins,
     group => jenkins,
-    content => template('jenkins_files/user_config.xml.erb'),
+    content => template('jenkins_files/templates/user_config.xml.erb'),
     require => [Package['jenkins'],
     File[$user_dirs],],
     notify => Service['jenkins'],
@@ -288,7 +288,7 @@ class profile::jenkins::master {
     mode => '0600',
     owner => 'jenkins',
     group => 'jenkins',
-    content => template('jenkins_files/credentials.xml.erb'),
+    content => template('jenkins_files/templates/credentials.xml.erb'),
   }
 
   cron {'docker image prune':
