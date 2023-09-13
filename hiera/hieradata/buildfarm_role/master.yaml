@@ -2,7 +2,7 @@ user::admin::name: admin
 user::admin::password_hash: '#jbcrypt:$2a$10$.5YoY/4Z6ZNqgu0wznnrpuv0qWdSpvJ966JXTc2kquoA1XQJmLvUy'
 
 credentials::jenkins-slave::username: jenkins-agent
-credentials::jenkins-slave::id: 45d97374-1624-4b64-bd61-b095c9877bf1
+credentials::jenkins-slave::id: 2cec738e-e822-482b-ba63-400d962487ab
 credentials::jenkins-slave::passphrase: 4lRsx/NwfEndwUlcWOOnYg==
 
 # Uncomment below to increase the memory available for Jenkins
@@ -12,7 +12,7 @@ credentials::jenkins-slave::passphrase: 4lRsx/NwfEndwUlcWOOnYg==
 jenkins_java_args: '-XX:MaxPermSize=512m -Xmx20g'
 
 # Used in modules/jenkins_files/templates/nodeMonitors.xml.erb
-jenkins::nodeMonitor::minimum_disk_space: 50G
+jenkins::nodeMonitor::minimum_disk_space: 10G
 
 # Jenkins component module parameters.
 # The Jenkins team recommends that production deployments use the latest LTS version of Jenkins.
@@ -31,31 +31,31 @@ jenkins::slave::slave_name: agent_on_master
 
 jenkins::private_ssh_key: |-
   -----BEGIN RSA PRIVATE KEY-----
-  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
+  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
   -----END RSA PRIVATE KEY-----
 
 # Optional customization urls for uploading docs.
