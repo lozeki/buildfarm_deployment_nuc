@@ -56,8 +56,6 @@ class profile::jenkins::agent (
     require => User[$agent_username],
   }
   
-  include python
-  
   class { 'python' :
     version => 'python3',
     pip     => 'present',
@@ -118,10 +116,10 @@ class profile::jenkins::agent (
 
 
   # required by cleanup_docker script
-  python::pip { 'docker':
-    ensure  => '2.5.0',
-    pkgname => 'docker',
-  }
+  #python::pip { 'docker':
+  #  ensure  => '2.5.0',
+  #  pkgname => 'docker',
+  #}
 
   # script to clean up docker images from oldest
   file { "/home/${agent_username}/cleanup_docker_images.py":

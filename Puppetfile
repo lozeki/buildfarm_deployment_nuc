@@ -11,7 +11,7 @@ mod 'puppetlabs-vcsrepo', '1.5.0'
 mod 'voxpupuli-jenkins', 
   :git => 'https://github.com/lozeki/puppet-jenkins_nuc.git',
   :ref => '1.7.0-rosbuildfarm3'
-mod 'python-lozeki',
+mod 'stankevich/python',
   :git => "https://github.com/lozeki/puppet-python.git",
   :ref => '1.19.1'
 mod 'newrelic-nrsysmond',
