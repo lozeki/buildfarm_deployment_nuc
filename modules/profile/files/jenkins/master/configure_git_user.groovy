@@ -9,4 +9,4 @@ def gitscm_config = jenkins.model.Jenkins.getInstance().getDescriptor("hudson.pl
 gitscm_config.setCreateAccountBasedOnEmail(false)
 gitscm_config.setGlobalConfigName("jenkins")
 gitscm_config.setGlobalConfigEmail("jenkins@build.ros.org")
-gitscm_config.save()
+/* gitscm_config.save() */
