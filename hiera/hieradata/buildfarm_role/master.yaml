@@ -2,7 +2,7 @@ user::admin::name: admin
 user::admin::password_hash: '#jbcrypt:$2a$10$.5YoY/4Z6ZNqgu0wznnrpuv0qWdSpvJ966JXTc2kquoA1XQJmLvUy'
 
 credentials::jenkins-slave::username: jenkins-agent
-credentials::jenkins-slave::id: 2cec738e-e822-482b-ba63-400d962487ab
+credentials::jenkins-slave::id: ee46bc55-5a86-48c1-bf68-74bf234e78ec
 credentials::jenkins-slave::passphrase: 4lRsx/NwfEndwUlcWOOnYg==
 
 # Uncomment below to increase the memory available for Jenkins
