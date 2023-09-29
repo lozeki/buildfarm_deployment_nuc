@@ -69,7 +69,7 @@ class profile::jenkins::rosplugins {
 
   ::jenkins::plugin { 'credentials':
     version => '1271.v54b_1c2c6388a_',
-    require => [ Jenkins::Plugin['ant'] ]
+    require => [  ]
   }
 
 
