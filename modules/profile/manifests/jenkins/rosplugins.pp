@@ -66,13 +66,6 @@ class profile::jenkins::rosplugins {
     version => '6.6',
     require => [ Jenkins::Plugin['credentials'] ]
   }
-
-  ::jenkins::plugin { 'credentials':
-    version => '1271.v54b_1c2c6388a_',
-    require => [  ]
-  }
-
-
   ::jenkins::plugin { 'collapsing-console-sections':
     version => '1.7.0',
     require => [ Jenkins::Plugin['bouncycastle-api'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['jdk-tool'], Jenkins::Plugin['jquery'] ]
