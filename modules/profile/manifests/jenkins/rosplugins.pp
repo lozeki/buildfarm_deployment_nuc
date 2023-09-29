@@ -148,12 +148,12 @@ class profile::jenkins::rosplugins {
   }
 
   ::jenkins::plugin { 'git':
-    version => '3.9.1',
+    version => '5.2.0',
     require => [ Jenkins::Plugin['bouncycastle-api'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['credentials'], Jenkins::Plugin['git-client'], Jenkins::Plugin['jdk-tool'], Jenkins::Plugin['mailer'], Jenkins::Plugin['matrix-project'], Jenkins::Plugin['parameterized-trigger'], Jenkins::Plugin['scm-api'], Jenkins::Plugin['ssh-credentials'], Jenkins::Plugin['structs'], Jenkins::Plugin['token-macro'], Jenkins::Plugin['workflow-scm-step'], Jenkins::Plugin['workflow-step-api'] ]
   }
 
   ::jenkins::plugin { 'git-client':
-    version => '2.7.3',
+    version => '4.4.0',
     require => [ Jenkins::Plugin['apache-httpcomponents-client-4-api'], Jenkins::Plugin['bouncycastle-api'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['credentials'], Jenkins::Plugin['jdk-tool'], Jenkins::Plugin['jsch'], Jenkins::Plugin['ssh-credentials'], Jenkins::Plugin['structs'] ]
   }
 
@@ -353,7 +353,7 @@ class profile::jenkins::rosplugins {
   }
 
   ::jenkins::plugin { 'script-security':
-    version => '1.48',
+    version => '1275.v23895f409fb_d',
     require => [ Jenkins::Plugin['jdk-tool'] ]
   }
 
@@ -363,7 +363,7 @@ class profile::jenkins::rosplugins {
   }
 
   ::jenkins::plugin { 'ssh-credentials':
-    version => '1.14',
+    version => '308.ve4497b_ccd8f4',
     require => [ Jenkins::Plugin['bouncycastle-api'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['credentials'], Jenkins::Plugin['jdk-tool'] ]
   }
 
@@ -373,7 +373,7 @@ class profile::jenkins::rosplugins {
   }
 
   ::jenkins::plugin { 'structs':
-    version => '1.20',
+    version => '324.va_f5d6774f3a_d',
     require => [ Jenkins::Plugin['command-launcher'], Jenkins::Plugin['jdk-tool'] ]
   }
 
@@ -403,7 +403,7 @@ class profile::jenkins::rosplugins {
   }
 
   ::jenkins::plugin { 'trilead-api':
-    version => '1.0.4',
+    version => '2.84.v72119de229b_7',
     require => [  ]
   }
 
