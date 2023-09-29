@@ -23,7 +23,7 @@ class profile::jenkins::rosplugins {
   }
 
   ::jenkins::plugin { 'antisamy-markup-formatter':
-    version => '1.5',
+    version => '162.v0e6ec0fcfcf6',
     require => [ Jenkins::Plugin['bouncycastle-api'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['jdk-tool'], Jenkins::Plugin['junit'] ]
   }
 
@@ -112,7 +112,7 @@ class profile::jenkins::rosplugins {
   }
 
   ::jenkins::plugin { 'display-url-api':
-    version => '2.2.0',
+    version => '2.200.vb_9327d658781',
     require => [ Jenkins::Plugin['bouncycastle-api'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['jdk-tool'] ]
   }
 
@@ -262,7 +262,7 @@ class profile::jenkins::rosplugins {
   }
 
   ::jenkins::plugin { 'ldap':
-    version => '1.20',
+    version => '701.vf8619de9160a_',
     require => [ Jenkins::Plugin['bouncycastle-api'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['jdk-tool'], Jenkins::Plugin['mailer'] ]
   }
 
@@ -272,7 +272,7 @@ class profile::jenkins::rosplugins {
   }
 
   ::jenkins::plugin { 'mailer':
-    version => '1.22',
+    version => '463.vedf8358e006b_',
     require => [ Jenkins::Plugin['bouncycastle-api'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['display-url-api'], Jenkins::Plugin['jdk-tool'] ]
   }
 
@@ -342,12 +342,12 @@ class profile::jenkins::rosplugins {
   }
 
   ::jenkins::plugin { 'run-condition':
-    version => '1.2',
+    version => '1.7',
     require => [ Jenkins::Plugin['bouncycastle-api'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['jdk-tool'], Jenkins::Plugin['token-macro'] ]
   }
 
   ::jenkins::plugin { 'scm-api':
-    version => '2.3.0',
+    version => '676.v886669a_199a_a_',
     require => [ Jenkins::Plugin['bouncycastle-api'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['jdk-tool'], Jenkins::Plugin['structs'] ]
   }
 
@@ -387,7 +387,7 @@ class profile::jenkins::rosplugins {
   }
 
   ::jenkins::plugin { 'timestamper':
-    version => '1.8.10',
+    version => '1.26',
     require => [ Jenkins::Plugin['bouncycastle-api'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['jdk-tool'], Jenkins::Plugin['workflow-step-api'] ]
   }
 
