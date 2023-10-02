@@ -332,7 +332,7 @@ class profile::jenkins::rosplugins {
   }
 
   ::jenkins::plugin { 'publish-over-ssh':
-    version => '1.25',
+    version => '1.24',
     require => [ Jenkins::Plugin['bouncycastle-api'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['jdk-tool'], Jenkins::Plugin['jsch'], Jenkins::Plugin['publish-over'], Jenkins::Plugin['structs'] ]
   }
 
