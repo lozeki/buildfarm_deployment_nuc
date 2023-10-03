@@ -292,7 +292,7 @@ class profile::jenkins::rosplugins {
   }
 
   ::jenkins::plugin { 'maven-plugin':
-    version => '3.1.2',
+    version => '3.22',
     require => [ Jenkins::Plugin['apache-httpcomponents-client-4-api'], Jenkins::Plugin['bouncycastle-api'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['javadoc'], Jenkins::Plugin['jdk-tool'], Jenkins::Plugin[], Jenkins::Plugin['junit'], Jenkins::Plugin['mailer'], Jenkins::Plugin['token-macro'] ]
   }
 
