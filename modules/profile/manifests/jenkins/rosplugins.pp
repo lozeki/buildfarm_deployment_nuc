@@ -53,7 +53,7 @@ class profile::jenkins::rosplugins {
   }
 
   ::jenkins::plugin { 'branch-api':
-    version => '2.0.20',
+    version => '2.1071.v1a_188a_562481',
     require => [ Jenkins::Plugin['bouncycastle-api'], Jenkins::Plugin['cloudbees-folder'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['jdk-tool'], Jenkins::Plugin['scm-api'], Jenkins::Plugin['structs'] ]
   }
 
@@ -63,7 +63,7 @@ class profile::jenkins::rosplugins {
   }
 
   ::jenkins::plugin { 'cloudbees-folder':
-    version => '6.6',
+    version => '6.758.vfd75d09eea_a_1',
     require => [ Jenkins::Plugin['credentials'] ]
   }
   ::jenkins::plugin { 'collapsing-console-sections':
@@ -422,7 +422,7 @@ class profile::jenkins::rosplugins {
   }
 
   ::jenkins::plugin { 'workflow-cps':
-    version => '2.60',
+    version => '3624.v43b_a_38b_62b_b_7',
     require => [ Jenkins::Plugin['ace-editor'], Jenkins::Plugin['jquery-detached'], Jenkins::Plugin['scm-api'], Jenkins::Plugin['script-security'], Jenkins::Plugin['structs'], Jenkins::Plugin['workflow-api'], Jenkins::Plugin['workflow-scm-step'], Jenkins::Plugin['workflow-step-api'], Jenkins::Plugin['workflow-support'] ]
   }
 
@@ -437,7 +437,7 @@ class profile::jenkins::rosplugins {
   }
 
   ::jenkins::plugin { 'workflow-multibranch':
-    version => '2.20',
+    version => '733.v109046189126',
     require => [ Jenkins::Plugin['branch-api'], Jenkins::Plugin['cloudbees-folder'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['jdk-tool'], Jenkins::Plugin['scm-api'], Jenkins::Plugin['script-security'], Jenkins::Plugin['structs'], Jenkins::Plugin['workflow-api'], Jenkins::Plugin['workflow-cps'], Jenkins::Plugin['workflow-job'], Jenkins::Plugin['workflow-scm-step'], Jenkins::Plugin['workflow-step-api'], Jenkins::Plugin['workflow-support'] ]
   }
 
