@@ -167,7 +167,7 @@ class profile::jenkins::rosplugins {
   }
 
   ::jenkins::plugin { 'github-api':
-    version => '1.92',
+    version => '1.314-431.v78d72a_3fe4c3',
     require => [ Jenkins::Plugin['bouncycastle-api'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['jackson2-api'], Jenkins::Plugin['jdk-tool'] ]
   }
 
