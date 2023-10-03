@@ -222,7 +222,7 @@ class profile::jenkins::rosplugins {
   }
 
   ::jenkins::plugin { 'jaxb':
-    version => '2.3.0.1',
+    version => '2.3.8-1',
     require => [ Jenkins::Plugin['trilead-api'] ]
   }
 
@@ -252,7 +252,7 @@ class profile::jenkins::rosplugins {
   }
 
   ::jenkins::plugin { 'jsch':
-    version => '0.1.54.2',
+    version => '0.1.55.61.va_e9ee26616e7',
     require => [ Jenkins::Plugin['bouncycastle-api'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['jdk-tool'], Jenkins::Plugin['ssh-credentials'] ]
   }
 
@@ -293,12 +293,12 @@ class profile::jenkins::rosplugins {
 
   ::jenkins::plugin { 'maven-plugin':
     version => '3.1.2',
-    require => [ Jenkins::Plugin['apache-httpcomponents-client-4-api'], Jenkins::Plugin['bouncycastle-api'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['javadoc'], Jenkins::Plugin['jdk-tool'], Jenkins::Plugin['jsch'], Jenkins::Plugin['junit'], Jenkins::Plugin['mailer'], Jenkins::Plugin['token-macro'] ]
+    require => [ Jenkins::Plugin['apache-httpcomponents-client-4-api'], Jenkins::Plugin['bouncycastle-api'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['javadoc'], Jenkins::Plugin['jdk-tool'], Jenkins::Plugin[], Jenkins::Plugin['junit'], Jenkins::Plugin['mailer'], Jenkins::Plugin['token-macro'] ]
   }
 
   ::jenkins::plugin { 'mercurial':
     version => '2.4',
-    require => [ Jenkins::Plugin['bouncycastle-api'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['credentials'], Jenkins::Plugin['jdk-tool'], Jenkins::Plugin['jsch'], Jenkins::Plugin['matrix-project'], Jenkins::Plugin['scm-api'], Jenkins::Plugin['ssh-credentials'], Jenkins::Plugin['structs'] ]
+    require => [ Jenkins::Plugin['bouncycastle-api'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['credentials'], Jenkins::Plugin['jdk-tool'], Jenkins::Plugin[], Jenkins::Plugin['matrix-project'], Jenkins::Plugin['scm-api'], Jenkins::Plugin['ssh-credentials'], Jenkins::Plugin['structs'] ]
   }
 
   ::jenkins::plugin { 'monitoring':
