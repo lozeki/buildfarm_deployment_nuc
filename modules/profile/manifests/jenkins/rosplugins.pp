@@ -312,7 +312,7 @@ class profile::jenkins::rosplugins {
   }
 
   ::jenkins::plugin { 'parameterized-trigger':
-    version => '2.35.2',
+    version => '2.43.1',
     require => [ Jenkins::Plugin['bouncycastle-api'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['conditional-buildstep'], Jenkins::Plugin['jdk-tool'], Jenkins::Plugin['matrix-project'], Jenkins::Plugin['script-security'], Jenkins::Plugin['subversion'] ]
   }
 
