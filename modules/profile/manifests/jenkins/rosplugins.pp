@@ -77,7 +77,7 @@ class profile::jenkins::rosplugins {
   }
 
   ::jenkins::plugin { 'conditional-buildstep':
-    version => '1.3.6',
+    version => '1.4.1',
     require => [ Jenkins::Plugin['bouncycastle-api'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['jdk-tool'], Jenkins::Plugin['matrix-project'], Jenkins::Plugin['maven-plugin'], Jenkins::Plugin['run-condition'], Jenkins::Plugin['token-macro'] ]
   }
 
@@ -377,7 +377,7 @@ class profile::jenkins::rosplugins {
   }
 
   ::jenkins::plugin { 'subversion':
-    version => '2.12.1',
+    version => '2.15.1',
     require => [ Jenkins::Plugin['command-launcher'], Jenkins::Plugin['credentials'], Jenkins::Plugin['jdk-tool'], Jenkins::Plugin['mapdb-api'], Jenkins::Plugin['scm-api'], Jenkins::Plugin['ssh-credentials'], Jenkins::Plugin['structs'], Jenkins::Plugin['workflow-scm-step'] ]
   }
 
