@@ -117,7 +117,7 @@ class profile::jenkins::rosplugins {
   }
 
   ::jenkins::plugin { 'durable-task':
-    version => '1.27',
+    version => '513.vc48a_a_075a_d93',
     require => [ Jenkins::Plugin['bouncycastle-api'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['jdk-tool'] ]
   }
 
