@@ -217,7 +217,7 @@ class profile::jenkins::rosplugins {
   }
 
   ::jenkins::plugin { 'javadoc':
-    version => '243.vb_b_503b_b_45537',
+    version => '233.vdc1a_ec702cff',
     require => [ Jenkins::Plugin['bouncycastle-api'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['jdk-tool'] ]
   }
 
