@@ -353,9 +353,14 @@ class profile::jenkins::rosplugins {
 
   ::jenkins::plugin { 'script-security':
     version => '1275.v23895f409fb_d',
-    require => [ Jenkins::Plugin['jdk-tool'] ]
+    require => [ Jenkins::Plugin['jdk-tool'], Jenkins::Plugin['caffeine-api'] ]
   }
-
+  
+  ::jenkins::plugin { 'caffeine-api':
+    version => '3.1.8-133.v17b_1ff2e0599',
+    require => [  ]
+  }
+  
   ::jenkins::plugin { 'ssh-agent':
     version => '1.17',
     require => [ Jenkins::Plugin['bouncycastle-api'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['credentials'], Jenkins::Plugin['jdk-tool'], Jenkins::Plugin['ssh-credentials'], Jenkins::Plugin['workflow-step-api'] ]
