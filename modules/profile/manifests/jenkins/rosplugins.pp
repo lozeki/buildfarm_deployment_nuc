@@ -109,7 +109,7 @@ class profile::jenkins::rosplugins {
 
   ::jenkins::plugin { 'apache-httpcomponents-client-4-api':
     version => '4.5.14-208.v438351942757',
-    require => [ Jenkins::Plugin['command-launcher'], Jenkins::Plugin['jdk-tool'] ]
+    require => [ Jenkins::Plugin['command-launcher'] ]
   }
 
   ::jenkins::plugin { 'audit-trail':
@@ -308,7 +308,7 @@ class profile::jenkins::rosplugins {
 
   ::jenkins::plugin { 'jdk-tool':
     version => '73.vddf737284550',
-    require => [  ]
+    require => [ Jenkins::Plugin['apache-httpcomponents-client-4-api'] ]
   }
 
   ::jenkins::plugin { 'jobConfigHistory':
