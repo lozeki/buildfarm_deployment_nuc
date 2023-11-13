@@ -14,9 +14,9 @@ class profile::jenkins::rosplugins {
 
   ::jenkins::plugin { 'workflow-cps':
     version => '3624.v43b_a_38b_62b_b_7',
-    require => [ Jenkins::Plugin['ionicons-api'], Jenkins::Plugin['workflow-api'], Jenkins::Plugin['workflow-scm-step'], Jenkins::Plugin['workflow-step-api'], Jenkins::Plugin['workflow-support'], Jenkins::Plugin['scm-api'], Jenkins::Plugin['script-security'], Jenkins::Plugin['structs'] ]
+    require => [ Jenkins::Plugin['ionicons-api'], Jenkins::Plugin['ace-editor'], Jenkins::Plugin['jquery-detached'], Jenkins::Plugin['scm-api'], Jenkins::Plugin['script-security'], Jenkins::Plugin['structs'], Jenkins::Plugin['workflow-api'], Jenkins::Plugin['workflow-scm-step'], Jenkins::Plugin['workflow-step-api'], Jenkins::Plugin['workflow-support'] ]
   }
-
+  
   ::jenkins::plugin { 'commons-text-api':
     version => '1.10.0-36.vc008c8fcda_7b_',
     require => [ Jenkins::Plugin['commons-lang3-api'] ]
@@ -26,12 +26,7 @@ class profile::jenkins::rosplugins {
     version => '848.v5a_383b_d14921',
     require => [ Jenkins::Plugin['caffeine-api'], Jenkins::Plugin['workflow-api'], Jenkins::Plugin['workflow-step-api'], Jenkins::Plugin['scm-api'], Jenkins::Plugin['script-security'] ]
   }
-
-  ::jenkins::plugin { 'workflow-multibranch':
-    version => '733.v109046189126',
-    require => [ Jenkins::Plugin['workflow-api'], Jenkins::Plugin['workflow-cps'], Jenkins::Plugin['workflow-job'], Jenkins::Plugin['workflow-scm-step'], Jenkins::Plugin['workflow-step-api'], Jenkins::Plugin['workflow-support'], Jenkins::Plugin['branch-api'], Jenkins::Plugin['cloudbees-folder'], Jenkins::Plugin['scm-api'], Jenkins::Plugin['script-security'] ]
-  }  
-
+  
   ::jenkins::plugin { 'ionicons-api':
     version => '56.v1b_1c8c49374e',
     require => [  ]
@@ -461,11 +456,6 @@ class profile::jenkins::rosplugins {
     require => [ Jenkins::Plugin['scm-api'], Jenkins::Plugin['structs'], Jenkins::Plugin['workflow-step-api'] ]
   }
 
-  ::jenkins::plugin { 'workflow-cps':
-    version => '3624.v43b_a_38b_62b_b_7',
-    require => [ Jenkins::Plugin['ace-editor'], Jenkins::Plugin['jquery-detached'], Jenkins::Plugin['scm-api'], Jenkins::Plugin['script-security'], Jenkins::Plugin['structs'], Jenkins::Plugin['workflow-api'], Jenkins::Plugin['workflow-scm-step'], Jenkins::Plugin['workflow-step-api'], Jenkins::Plugin['workflow-support'] ]
-  }
-
   ::jenkins::plugin { 'workflow-cps-global-lib':
     version => '2.12',
     require => [ Jenkins::Plugin['cloudbees-folder'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['credentials'], Jenkins::Plugin['git-client'], Jenkins::Plugin['git-server'], Jenkins::Plugin['jdk-tool'], Jenkins::Plugin['scm-api'], Jenkins::Plugin['script-security'], Jenkins::Plugin['structs'], Jenkins::Plugin['workflow-cps'], Jenkins::Plugin['workflow-scm-step'] ]
@@ -489,11 +479,6 @@ class profile::jenkins::rosplugins {
   ::jenkins::plugin { 'workflow-step-api':
     version => '639.v6eca_cd8c04a_a_',
     require => [ Jenkins::Plugin['bouncycastle-api'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['jdk-tool'], Jenkins::Plugin['structs'] ]
-  }
-
-  ::jenkins::plugin { 'workflow-support':
-    version => '2.22',
-    require => [ Jenkins::Plugin['scm-api'], Jenkins::Plugin['script-security'], Jenkins::Plugin['workflow-api'], Jenkins::Plugin['workflow-step-api'] ]
   }
 
   ::jenkins::plugin { 'xunit':
