@@ -6,12 +6,62 @@ class profile::jenkins::rosplugins {
     version => '3.6.0',
     require => [ Jenkins::Plugin['bouncycastle-api'], Jenkins::Plugin['cloudbees-folder'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['jdk-tool'], Jenkins::Plugin['matrix-project'] ]
   }
+
+  ::jenkins::plugin { 'echarts-api':
+    version => '5.4.0-5',
+    require => [ Jenkins::Plugin['commons-lang3-api'], Jenkins::Plugin['commons-text-api'], Jenkins::Plugin['font-awesome-api'], Jenkins::Plugin['bootstrap5-api'], Jenkins::Plugin['jquery3-api'], Jenkins::Plugin['plugin-util-api'], Jenkins::Plugin['jackson2-api'] ]
+  }
+  
+  ::jenkins::plugin { 'okhttp-api':
+    version => '4.11.0-157.v6852a_a_fa_ec11',
+    require => [  ]
+  }
+  
+  ::jenkins::plugin { 'snakeyaml-api':
+    version => '1.33-95.va_b_a_e3e47b_fa_4',
+    require => [  ]
+  } 
+  
+  ::jenkins::plugin { 'jquery3-api':
+    version => '3.7.0-1',
+    require => [ Jenkins::Plugin['commons-lang3-api'], Jenkins::Plugin['commons-text-api'] ]
+  }
+  
+  ::jenkins::plugin { 'jakarta-activation-api':
+    version => '2.0.1-3',
+    require => [  ]
+  }
+
+  ::jenkins::plugin { 'jakarta-mail-api':
+    version => '2.0.1-3',
+    require => [ Jenkins::Plugin['jakarta-activation-api'] ]
+  }
+  
+  ::jenkins::plugin { 'credentials-binding':
+    version => '604.vb_64480b_c56ca_',
+    require => [ Jenkins::Plugin['workflow-step-api'], Jenkins::Plugin['credentials'], Jenkins::Plugin['plain-credentials'], Jenkins::Plugin['ssh-credentials'], Jenkins::Plugin['structs'] ]
+  }
+  
+  ::jenkins::plugin { 'checks-api':
+    version => '2.0.0',
+    require => [ Jenkins::Plugin['commons-lang3-api'], Jenkins::Plugin['commons-text-api'], Jenkins::Plugin['plugin-util-api'], Jenkins::Plugin['workflow-step-api'], Jenkins::Plugin['workflow-support'], Jenkins::Plugin['display-url-api'] ]
+  }
+  
+  ::jenkins::plugin { 'bootstrap5-api':
+    version => '5.3.0-1',
+    require => [ Jenkins::Plugin['commons-lang3-api'], Jenkins::Plugin['commons-text-api'], Jenkins::Plugin['font-awesome-api'] ]
+  }  
   
   ::jenkins::plugin { 'commons-lang3-api':
     version => '3.13.0-62.v7d18e55f51e2',
     require => [  ]
-  }  
-
+  }
+  
+  ::jenkins::plugin { 'font-awesome-api':
+    version => '6.3.0-4',
+    require => [ Jenkins::Plugin['commons-lang3-api'], Jenkins::Plugin['commons-text-api'], Jenkins::Plugin['plugin-util-api'] ]
+  }
+  
   ::jenkins::plugin { 'workflow-cps':
     version => '3624.v43b_a_38b_62b_b_7',
     require => [ Jenkins::Plugin['ionicons-api'], Jenkins::Plugin['ace-editor'], Jenkins::Plugin['jquery-detached'], Jenkins::Plugin['scm-api'], Jenkins::Plugin['script-security'], Jenkins::Plugin['structs'], Jenkins::Plugin['workflow-api'], Jenkins::Plugin['workflow-scm-step'], Jenkins::Plugin['workflow-step-api'], Jenkins::Plugin['workflow-support'] ]
