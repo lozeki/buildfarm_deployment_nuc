@@ -6,7 +6,32 @@ class profile::jenkins::rosplugins {
     version => '3.6.0',
     require => [ Jenkins::Plugin['bouncycastle-api'], Jenkins::Plugin['cloudbees-folder'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['jdk-tool'], Jenkins::Plugin['matrix-project'] ]
   }
+  
+  ::jenkins::plugin { 'commons-lang3-api':
+    version => '3.13.0-62.v7d18e55f51e2',
+    require => [  ]
+  }  
 
+  ::jenkins::plugin { 'commons-text-api':
+    version => '1.10.0-36.vc008c8fcda_7b_',
+    require => [ Jenkins::Plugin['commons-lang3-api'] ]
+  }
+
+  ::jenkins::plugin { 'workflow-support':
+    version => '848.v5a_383b_d14921',
+    require => [ Jenkins::Plugin['caffeine-api'], Jenkins::Plugin['workflow-api'], Jenkins::Plugin['workflow-step-api'], Jenkins::Plugin['scm-api'], Jenkins::Plugin['script-security'] ]
+  }  
+
+  ::jenkins::plugin { 'ionicons-api':
+    version => '56.v1b_1c8c49374e',
+    require => [  ]
+  }
+  
+  ::jenkins::plugin { 'plugin-util-api':
+    version => '3.3.0',
+    require => [ Jenkins::Plugin['mmons-lang3-api'], Jenkins::Plugin['commons-text-api'], Jenkins::Plugin['workflow-api'], Jenkins::Plugin['workflow-step-api'], Jenkins::Plugin['workflow-support'] ]
+  } 
+  
   ::jenkins::plugin { 'ace-editor':
     version => '1.1',
     require => [ Jenkins::Plugin['bouncycastle-api'], Jenkins::Plugin['command-launcher'], Jenkins::Plugin['jdk-tool'] ]
