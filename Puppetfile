@@ -6,7 +6,7 @@ mod 'garethr-docker',
   :ref => 'master'
 mod 'puppetlabs-apache', '1.11.0'
 mod 'puppetlabs-concat', '2.2.0'
-mod 'puppetlabs-ntp', '4.2.0'
+mod 'puppetlabs-ntp', '5.0.0'
 mod 'puppetlabs-vcsrepo', '1.5.0'
 mod 'voxpupuli-jenkins', 
   :git => 'https://github.com/lozeki/puppet-jenkins_nuc.git',
