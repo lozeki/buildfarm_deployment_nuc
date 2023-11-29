@@ -84,7 +84,7 @@ class profile::jenkins::rosplugins {
   
   ::jenkins::plugin { 'plugin-util-api':
     version => '3.3.0',
-    require => [ Jenkins::Plugin['mmons-lang3-api'], Jenkins::Plugin['commons-text-api'], Jenkins::Plugin['workflow-api'], Jenkins::Plugin['workflow-step-api'], Jenkins::Plugin['workflow-support'] ]
+    require => [ Jenkins::Plugin['commons-lang3-api'], Jenkins::Plugin['commons-text-api'], Jenkins::Plugin['workflow-api'], Jenkins::Plugin['workflow-step-api'], Jenkins::Plugin['workflow-support'] ]
   } 
   
   ::jenkins::plugin { 'ace-editor':
