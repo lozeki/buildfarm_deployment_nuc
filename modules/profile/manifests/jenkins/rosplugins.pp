@@ -109,7 +109,7 @@ class profile::jenkins::rosplugins {
 
   ::jenkins::plugin { 'apache-httpcomponents-client-4-api':
     version => '4.5.14-208.v438351942757',
-    require => [ Jenkins::Plugin['command-launcher'] ]
+    require => [  ]
   }
 
   ::jenkins::plugin { 'audit-trail':
